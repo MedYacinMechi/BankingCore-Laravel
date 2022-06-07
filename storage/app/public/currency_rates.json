@@ -1,0 +1,32 @@
+{
+    "EUR": {
+        "EUR": 1,
+        "USD": 10.568,
+        "GBP": 0.8401,
+        "JPY": 138.883,
+        "USD.m": true,
+        "GBP.m": false,
+        "JPY.m": false
+    },
+    "USD": {
+        "USD": 1,
+        "EUR": 0.9256,
+        "GBP": 0.7777,
+        "JPY": 128.5965,
+        "EUR.m": false,
+        "GBP.m": false,
+        "JPY.m": false
+    },
+    "GBP": {
+        "GBP": 1,
+        "EUR": 1.1903,
+        "USD": 1.286,
+        "JPY": 165.3659
+    },
+    "JPY": {
+        "JPY": 1,
+        "EUR": 0.0072,
+        "USD": 0.007776,
+        "GBP": 0.006047
+    }
+}
