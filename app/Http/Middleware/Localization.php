@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+
+class Localization
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
+    public function handle($request, Closure $next)
+    {
+        if (\Session::has('locale')==true) {
+            \App::setlocale(\Session::get('locale'));
+        }
+        else{
+            \Session::put('locale',env('DEFAULT_LANG','en'));
+            \App::setlocale(\Session::get('locale'));
+        }
+        return $next($request);
+    }
+}
